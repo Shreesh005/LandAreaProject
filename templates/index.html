@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/style.css')}}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="image">
+        <img src="{{url_for('static',filename='images/picture.jpg')}}" alt="could not load. Try refreshing" srcset="">
+    </div>
+    <div id="entires">
+        <form action="/calculate" method="POST">
+            <div class="sideofdiagonal">
+                <p class="heading">Enter the sides on the one side of the diagonal</p>
+                <label for="firstside">Enter the side(in metres): </label>
+                <input type="text" name="firstside" id="">
+
+                <label for="secondside">Enter the side(in metres): </label>
+                <input type="text" name="secondside" id="">
+            </div>
+
+            <div class="sideofdiagonal">
+                <p class="heading">Enter the sides on the other side of the diagonal</p>
+                <label for="firstsideotherdiag">Enter the side(in metres): </label>
+                <input type="text" name="firstsideotherdiag" id="">
+
+                <label for="secondsideotherdiag">Enter the side(in metres): </label>
+                <input type="text" name="secondsideotherdiag" id="">
+            </div>
+            <div class="sideofdiagonal">
+                <p class="heading">Enter the diagonal length</p>
+                <label for="diagonal">Enter the length of diagonal(in metres): </label>
+                <input type="text" name="diagonal" id="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-large" id=:><strong>Calculate the area</strong></button></a>
+        </form>
+    </div>
+    <div id="message">
+        <h1>{{message}}</h1>
+    </div>
+</body>
+</html>
