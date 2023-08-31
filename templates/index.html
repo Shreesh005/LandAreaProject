@@ -10,29 +10,29 @@
     <div id="image">
         <img src="{{url_for('static',filename='images/picture.jpg')}}" alt="could not load. Try refreshing" srcset="">
     </div>
-    <div id="entires">
+    <div id="entries">
         <form action="/calculate" method="POST">
             <div class="sideofdiagonal">
                 <p class="heading">Enter the sides on the one side of the diagonal</p>
-                <label for="firstside">Enter the side(in metres): </label>
-                <input type="text" name="firstside" id="">
+                <label class="notice" for="firstside">Enter the side(in metres): </label>
+                <input type="text" name="firstside" id="" required="Required field">
 
-                <label for="secondside">Enter the side(in metres): </label>
-                <input type="text" name="secondside" id="">
+                <label class="notice" for="secondside">Enter the side(in metres): </label>
+                <input type="text" name="secondside" id="" required="Required field">
             </div>
 
             <div class="sideofdiagonal">
                 <p class="heading">Enter the sides on the other side of the diagonal</p>
-                <label for="firstsideotherdiag">Enter the side(in metres): </label>
-                <input type="text" name="firstsideotherdiag" id="">
+                <label class="notice" for="firstsideotherdiag">Enter the side(in metres): </label>
+                <input type="text" name="firstsideotherdiag" id="" required="Required field">
 
-                <label for="secondsideotherdiag">Enter the side(in metres): </label>
-                <input type="text" name="secondsideotherdiag" id="">
+                <label class="notice" for="secondsideotherdiag">Enter the side(in metres): </label>
+                <input type="text" name="secondsideotherdiag" id="" required="Required field">
             </div>
             <div class="sideofdiagonal">
                 <p class="heading">Enter the diagonal length</p>
-                <label for="diagonal">Enter the length of diagonal(in metres): </label>
-                <input type="text" name="diagonal" id="">
+                <label class="notice" for="diagonal">Enter the length of diagonal(in metres): </label>
+                <input type="text" name="diagonal" id="" required="Required field">
             </div>
             <button type="submit" class="btn btn-primary btn-block btn-large" id=:><strong>Calculate the area</strong></button></a>
         </form>

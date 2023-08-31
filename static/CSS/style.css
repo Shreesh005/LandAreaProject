@@ -1,5 +1,31 @@
-
-
+body{
+    background: black;
+}
 .sideofdiagonal{
-    color:green;
+    color:crimson;
+    text-shadow: 10px;
+
+}
+input{
+    background-color: aqua;
+    width:100px;
+}
+#entries{
+    background-color:rgba(256,256,256,0.4);
+    border-radius: 40px;
+}
+.heading{
+    color:greenyellow;
+    font-size: 30px;
+    padding:40px;
+}
+.notice{
+    color:orange;
+    font-size: 20px;
+}
+button{
+    width:600px;
+    height:100px;
+    margin:70px;
+    text-decoration: solid;
 }
