@@ -8,7 +8,11 @@ body{
 }
 input{
     background-color: aqua;
-    width:100px;
+    width:600px;
+    border-radius: 1000px;
+    height: 40px;
+    font-size: 30px;
+
 }
 #entries{
     background-color:rgba(256,256,256,0.4);
@@ -22,10 +26,21 @@ input{
 .notice{
     color:orange;
     font-size: 20px;
+    margin:30px;
 }
 button{
     width:600px;
     height:100px;
-    margin:70px;
+    margin:70px 170px;
     text-decoration: solid;
+    border:10px groove aqua;
+    border-radius: 899px;
+    background-color: rgb(1, 245, 164);
+}
+#message{
+    color:red;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(133, 255, 3, 0.3);
+    border-radius: 100px;
 }
